@@ -1,4 +1,5 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
+
 html,
 body,
 div,
@@ -153,7 +154,6 @@ h5 {
 
 header nav {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   width: 691px;
   vertical-align: top;
@@ -183,8 +183,9 @@ header nav a:last-child {
 
 .logo {
   display: flex;
-  margin-top: 25px;
-  margin-left: 30px;
+  justify-content: center;
+  margin-top: 20px;
+  margin-left: 20px;
 }
 
 .code-img {
@@ -266,6 +267,7 @@ footer {
 .container2 {
   width: 900px;
   margin: 0 auto;
+  /* border: 1px solid black; */
 }
 .services-header-img {
   margin-top: 40px;
@@ -279,10 +281,10 @@ footer {
   padding: 30px;
   border-bottom: 1px solid black;
 }
-button {
+/* button {
   border-radius: 8px;
   font-size: 10;
-}
+} */
 
 .cats {
   border: 1px solid black;
@@ -298,6 +300,8 @@ button {
 }
 .list {
   display: flex;
+  /* margin-top: 30px; */
+  /* border: 1px solid blue; */
   border-top: 1px solid black;
   padding: 10px;
 }
@@ -310,14 +314,128 @@ button {
 .list1 {
   margin-top: 20px;
   padding: 20px;
+  /* border: 1px solid blue; */
 }
 .services-info-img {
   padding: 30px;
 }
+
+/* responsive code */
+
 @media (max-width: 800px) {
   .container {
     width: 500px;
-    border: 1px solid red;
-    background: blue;
+  }
+  header {
+    flex-direction: column-reverse;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .code-img {
+    display: none;
+  }
+  .jumbo {
+    flex-direction: colunm;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 30px;
+  }
+  button {
+    background: white;
+    vertical-align: top;
+    margin-top: 6px;
+    width: 200px;
+    font-size: 17px;
+    border: 1px solid black;
+    cursor: pointer;
+    margin-bottom: 50px;
+  }
+  .main-content {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 500px) {
+  .container {
+    width: auto;
+  }
+  .code-img {
+    display: none;
+  }
+  header {
+    flex-direction: column-reverse;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .main-content {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+  }
+  .top-content {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+  }
+  .middle-img {
+    display: flex;
+    justify-content: center;
+  }
+  .bottom-content {
+    display: flex;
+    flex-direction: column;
+  }
+  .text-content {
+    padding: 10px;
+  }
+
+  .jumbo {
+    flex-direction: colunm;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 30px;
+  }
+  button {
+    background: white;
+    vertical-align: top;
+    margin-top: 6px;
+    width: 200px;
+    font-size: 17px;
+    border: 1px solid black;
+    cursor: pointer;
+    margin-bottom: 50px;
+  }
+  header nav {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  header nav a {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: light lightgrey;
+    margin-right: 65px;
+    font-size: 30px;
+    text-decoration: none;
+  }
+  header nav a {
+    display: flex;
+    border-top: 1px solid black;
+    padding: 30px;
+    border-bottom: 1px solid black;
+  }
+
+  .copyright {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
   }
 }
