@@ -117,7 +117,7 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: "";
+  content: '';
   content: none;
 }
 table {
@@ -133,7 +133,7 @@ table {
 html,
 body {
   height: 100%;
-  font-family: "Titillium Web", sans-serif;
+  font-family: 'Titillium Web', sans-serif;
 }
 
 h1,
@@ -141,7 +141,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: "Bangers", cursive;
+  font-family: 'Bangers', cursive;
   letter-spacing: 1px;
   margin-bottom: 15px;
 }
@@ -324,25 +324,29 @@ footer {
 
 @media (max-width: 800px) {
   .container {
-    width: 500px;
+    width: 100%;
   }
+
   header {
-    flex-direction: column-reverse;
     display: flex;
+    flex-direction: column-reverse;
     flex-wrap: wrap;
     align-items: center;
+    width: 100%;
   }
   .code-img {
     display: none;
   }
   .jumbo {
-    flex-direction: colunm;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: flex-end;
-    margin-bottom: 30px;
+    width: 100%;
   }
+  .jumbo-copy {
+    width: 100%;
+  }
+  .middle-img {
+    width: 100%;
+  }
+
   button {
     background: white;
     vertical-align: top;
@@ -356,12 +360,21 @@ footer {
   .main-content {
     display: flex;
     justify-content: center;
+    width: 100%;
+  }
+  .contact-section {
+    width: 100%;
+  }
+  .copyright {
+    width: 100%;
   }
 }
 
+/*mobile */
+
 @media (max-width: 500px) {
   .container {
-    width: auto;
+    width: 100%;
   }
   .code-img {
     display: none;
@@ -370,25 +383,32 @@ footer {
     flex-direction: column-reverse;
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    justify-content: center;
+    width: 100%;
+    /* border: 1px solid red; */
   }
+
   .main-content {
     display: flex;
     flex-direction: column;
     padding: 30px;
+    width: 100%;
   }
   .top-content {
     display: flex;
     flex-direction: column;
     padding: 10px;
+    width: 100%;
   }
   .middle-img {
     display: flex;
     justify-content: center;
+    width: 100%;
   }
   .bottom-content {
     display: flex;
     flex-direction: column;
+    width: 100%;
   }
   .text-content {
     padding: 10px;
@@ -401,6 +421,7 @@ footer {
     align-items: center;
     justify-content: flex-end;
     margin-bottom: 30px;
+    width: 100%;
   }
   button {
     background: white;
@@ -414,28 +435,35 @@ footer {
   }
   header nav {
     display: flex;
+    text-align: center;
     flex-direction: column;
     flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
   }
   header nav a {
     display: flex;
     flex-wrap: wrap;
+    text-align: center;
     justify-content: center;
     color: light lightgrey;
     margin-right: 65px;
     font-size: 30px;
     text-decoration: none;
-  }
-  header nav a {
-    display: flex;
-    border-top: 1px solid black;
     padding: 30px;
+    width: 100%;
+    border-top: 1px solid black;
     border-bottom: 1px solid black;
+    /* border: 1px solid red; */
   }
 
+  .contact-section {
+    width: 100%;
+  }
   .copyright {
     display: flex;
     text-align: center;
     flex-direction: column;
+    width: 100%;
   }
 }
